@@ -1,0 +1,236 @@
+<div class="mall-slide slide">
+  <div class="slid-content">
+      <div class="mall-show-slide fade" *ngFor="let item of Imagedata;">
+          <img src="{{item.img}}" style="width:100%">
+      </div>
+      <div class="mall-carousel-ind">
+          <ul>
+              <li *ngFor="let item of Imagedata; let i = index;" [class.mall-this]="startIndex - 1 === i"></li>
+          </ul>
+      </div>
+  </div>
+</div>
+<div class="body">
+    <div class="events">
+        <h2><b>UPCOMMING EVENTS</b> </h2>
+        <div class="eventss">
+            <div class="news_events">
+                <h2>NEWS & EVENTS</h2>
+                <div class="events_data">
+                    <h3><b>  Internal Hackathon for Smart India Hackathon 2022</b></h3>
+                <P> 
+                    Institution's Innovation Council of Mount Zion College of Engineering & Technology organising Internal Hackathon for Smart India Hackathon 2022, world's biggest hackathon and open innovation model, an initiative by the Ministry of Human Resource Development on 29th March 2022.
+                </P>
+                <h3><b>  Java Programming and Soft Skill DevelopmentNew</b></h3>
+                <P> 
+                    Department of Computer Science and Engineering along with ICT Academy proudly organizes a two weeks hands on training on “Java programming and Soft Skill Development” exclusively for final year girl students under the auspices of Centre for Women Empowerment (COWE) powered by DXC Technology from 16/03/2022.
+                </P>
+                </div>
+                
+            </div>
+            <div class="event_img">
+                <img src="../../assets/img/graduation.jpeg" alt="EVENT_IMAGE">
+            </div>
+            <div class="training_placement">
+                <h2>TRAINING & PLACEMENT</h2>
+                <div class="events_data">
+                    <h3><b>   Campus Drive 2021‐2022</b></h3>
+                <P> 
+                   
+                    Hearty Congratulations to the selected students! ATOS conducted Virtual Interview for B.E Final Year students. A student from CSE was selected and got successfully placed.New
+                </P>
+                <h3><b> Campus Drive 2021‐2022</b></h3>
+                <P>     
+                    Hearty Congratulations to the selected students! SONY conducted Virtual Interview for B.E Final Year students. A student from CSE was selected and got successfully placed.New
+                </P>
+                </div>
+                
+            </div>
+        </div>
+        
+      
+    </div>
+    <div class="departments">
+        <h2><b>DEPARTMENTS</b></h2>
+        <div class="department_list">
+            <div class="civil">
+                <a href="">
+                <mat-card>                       
+                     <img src="../../assets/img/civil.png" alt="">
+                      <mat-card-title> CIVIL ENGINEERING</mat-card-title>
+                  </mat-card>
+                 </a>
+               
+            </div>
+           <div class="cse">
+                <a href="">
+                    <mat-card>                       
+                        <img src="../../assets/img/cse.png" alt="CSE_IMG">
+                        <mat-card-title>COMPUTER SCIENCE AND ENGINEERING</mat-card-title>
+                    </mat-card></a>
+         
+           
+           </div>
+           <div class="ece" >
+            <a href="">
+                <mat-card>                       
+                    <img src="../../assets/img/" alt="ECE_IMG">
+                    <mat-card-title>ELECTRONICS AND COMMUNICATION ENGINEERING</mat-card-title>
+                </mat-card>
+            </a>
+           </div>
+           <div class="eee">
+            <a href="">
+                <mat-card>                       
+                    <img src="../../assets/img/" alt="EEE_IMG">
+                    <mat-card-title>ELECTRICAL AND ELECTRONICS ENGINEERING</mat-card-title>
+                </mat-card></a>
+           </div>
+            <div class="mech"> <a href="">
+                <mat-card>                       
+                    <img src="../../assets/img/" alt="MECH_IMG">
+                    <mat-card-title> MECHANICAL ENGINEERING</mat-card-title>
+                </mat-card>
+               </a>
+            </div>
+           <div class="appl">
+            <a href="">
+                <mat-card>                       
+                    <img src="../../assets/img/" alt="APPLY_NOW">
+                    <mat-card-title>APPLY NOW!</mat-card-title>
+                </mat-card></a>
+        </div>
+        </div>
+    
+    </div>
+    <div class="quicklinks">
+        <h2><b>QUICKLINKS</b></h2>
+        <div class="links">
+            <ul>
+                <li>
+                   <a href="">ACADEMIC CALENDAR</a> 
+                </li>
+                <li>
+                   <a href="">CURRICULUM & SYLLABUS</a> 
+                </li>
+                <li>
+                    <a href="">MICROSOFT DREAMSPARK WEBSTORE</a> 
+                </li>
+                <li>
+                   <a href="">AUTODESK EDUCATION</a> 
+                </li>
+                <li>
+                   <a href="">TECH SUPPORT</a> 
+                </li>
+        </ul>
+        <ul>
+            <li>
+               <a href=""> MOODLE-VIRTUAL LEARNING</a>
+            </li>
+            <li>
+               <a href="">NPTEL VIDEOS</a> 
+            </li>
+            <li>
+               <a href="">ICT LEARNING RESOURCES</a> 
+            </li>
+            <li>
+               <a href="">ONLINE JOURNALS</a> 
+            </li>
+    </ul>
+    <ul>
+        <li>
+            <a href=""> OFFICIAL EMAIL</a>
+        </li>
+        <li>
+           <a href=""> ANTI-RAGGING COMMITTEE</a>
+        </li>
+        <li>
+            <a href="">STUDENT COUNSELLING</a>
+        </li>
+        <li>
+          <a href="">CODE OF CONDUCT HANDBOOK</a>  
+        </li>
+        <li>
+           <a href="">CAPACITY BUILDING AND SKILLS ENCHANCEMENT (CBSE)</a> 
+        </li>
+       
+    </ul>
+        </div>
+    
+    </div>
+    <div class="menu">
+        <a href="">
+            <mat-card style="background-image: url('../../assets/img/stud-login.png')">                                
+                <mat-card-footer>
+                    <h3><b> Student portal</b></h3>
+                   </mat-card-footer> 
+            </mat-card>
+        </a>
+
+            <a href="">
+                <mat-card style="background-image: url('../../assets/img/gallery.jpg')">                            
+                   <mat-card-footer>
+                    <h3><b>Gallery</b> </h3>
+                   </mat-card-footer>         
+                </mat-card>
+            </a>
+                <a href="">
+                    <mat-card style="background-image: url('../../assets/img/campus.jpg')">                         
+                       <mat-card-footer>
+                        <h3><b>Campus </b> </h3>
+                       </mat-card-footer>   
+                    </mat-card>
+                </a>
+                    <a href="" >
+                        <mat-card style="background-image: url('../../assets/img/feedback.jpg')">                       
+                           <mat-card-footer>
+                            <h3><b>Feedback</b> </h3>
+                           </mat-card-footer>         
+                        </mat-card></a>
+    </div>
+    
+</div>
+<footer>
+    <h2>CONTACT</h2>
+    <div class="contact_content">
+        <div class="address">
+            <mat-icon> place</mat-icon>
+            <h4>Lena Vilakku,<br> Pilivalam P.O,<br> Thirumayam Tk. <br>
+                Pudukkottai Dt - 622507 <br>
+                Tamil Nadu, INDIA  
+            </h4>
+            <mat-icon>smartphone</mat-icon>
+            <p> +91 7373344444 (9am - 5pm)</p>
+            <mat-icon>smartphone</mat-icon>
+            <p> +91 8973510000  (9am - 5pm)</p>
+            <a href="info@mzcet.in">info@mzcet.in</a>
+            <p>
+                For Admission Enquiry  +91 9659173000
+            </p> 
+        </div>
+        <div class="maplink">
+            <a href="https://www.google.com/maps/place/Mount+Zion+College+of+Engineering+and+Technology/@10.2944934,78.7622519,17z/data=!4m12!1m6!3m5!1s0x3b007b9be3b6b9c1:0x7dc82f4a20569695!2sMount+Zion+College+of+Engineering+and+Technology!8m2!3d10.2944881!4d78.7644406!3m4!1s0x3b007b9be3b6b9c1:0x7dc82f4a20569695!8m2!3d10.2944881!4d78.7644406">
+         <img src="../../assets/img/location.png" alt="location">
+     </a>
+        </div>
+       <div class="links">
+           <h2>Links</h2>
+           <ul>
+            <a href="https://www.ugc.ac.in/">UGC</a> |
+            <a href="https://nba-india.org/">NBA</a>|
+            <a href="https://nptel.ac.in/">NPTEL Videos</a>|
+            <a href="https://www.annauniv.edu/">Anna University</a>|
+            <a href="">NAAC SSR Report</a>|
+            <a href="">NAAC AQAR Report</a>|
+            <a href="">Right To Information Act (RTI)</a>|
+            <a href="">Mandatory Disclosure</a>|
+            <a href="">Web Mail</a> 
+           </ul>
+        
+       </div>
+       <div class="socialmedia">
+           
+       </div>
+       
+    </div>
+</footer>
