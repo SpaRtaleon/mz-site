@@ -59,11 +59,12 @@
     border-radius: 14px;
 } 
 .body{
-  padding: 20px;
+  // padding: 20px;
   
 }
 .eventss{
   display: flex;
+  
 }
 .eventss img{
   padding: 8px;
@@ -105,11 +106,12 @@
  .department_list mat-card {
   // background-image: url('../../assets/img/civil.png');
    width: 300px;
-   height: 200px;
+   height: 60%;
    text-align: center;
    margin: 20px;
    padding: 20px;
    justify-items: center;
+   box-shadow: 2px 2px 2px 2px rgb(102, 104, 105);
    
  }
  .department_list mat-card:hover{
@@ -129,22 +131,28 @@
 
 
  }
- .quicklinks h2{
+ .full{
+   padding: 2vw;
+ }
+.quicklink{
   display: flex;
-  justify-content: center;
-   background-color: rgb(37 64 213 / 80%);
-   height: 40px;
- 
-   align-items: center;
- }
- .links{
-  display: flex;
-  justify-content: space-evenly;
-
- }
- .links li{
-   padding: 20px;
- }
+  align-items: center;
+}
+.quicklink a{
+  text-decoration: none;
+  color: rgb(37 64 213 / 80%);
+  text-transform: lowercase; 
+  text-align: center;
+}
+.quicklink::before {
+  text-transform: capitalize;
+}
+.quicklink a:hover{
+  color: rgba(250, 112, 53, 0.938);
+}
+.link a span{
+  margin-right: 20px;
+}
 .menu{
   margin: 20px;
   padding: 20px;
@@ -180,20 +188,24 @@ display: flex;
  
 }
 .address{
-width: 30%;
+width: 100%;
 display: flex;
-justify-content: space-evenly;
+// justify-content: space-evenly;
 flex-wrap:wrap ;
 }
 .maplink{
-  width: 33%;
+ 
   }
 
   .maplink img{
     width: 350px;
   }
-.links{
-  width: 33%;
+.third{
+ margin-left: 4vw;
+}
+.socialmedia a{
+padding: 5px;
+color: white;
 }
 @-webkit-keyframes fade {
   from {opacity: .4}
