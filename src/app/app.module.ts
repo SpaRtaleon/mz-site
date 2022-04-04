@@ -11,13 +11,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+import { FooterComponent } from './footer/footer.component';
+import {DepartmentsModule} from './departments/departments.module';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
     AboutUsComponent,
-    ContactusComponent
+    ContactusComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    DepartmentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

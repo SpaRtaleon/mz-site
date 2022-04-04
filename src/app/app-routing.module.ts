@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { CivilComponent } from './departments/civil/civil.component';
+import { CseComponent } from './departments/cse/cse.component';
+import { EceComponent } from './departments/ece/ece.component';
+import { EeeComponent } from './departments/eee/eee.component';
+import { MechComponent } from './departments/mech/mech.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -20,6 +25,26 @@ const routes: Routes = [
   {
     path: 'aboutus',
     component: AboutUsComponent
+  },
+  {
+    path: 'civil',
+    component: CivilComponent
+  },
+  {
+    path: 'cse',
+    component: CseComponent
+  },
+  {
+    path: 'eee',
+    component: EeeComponent
+  },
+  {
+    path: 'ece',
+    component: EceComponent
+  },
+  {
+    path: 'mech',
+    component: MechComponent
   },
 ];
 

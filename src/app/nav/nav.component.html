@@ -6,7 +6,23 @@
     <span>MZCET</span>
     <span class="example-spacer"></span>
     <span><a routerLink="/home">Home</a></span>
+    <span>
+     <a href="">
+      <button #menuTrigger="matMenuTrigger" mat-button [matMenuTriggerFor]="menu"(mouseenter)="menuTrigger.openMenu()">Departments</button>
+     </a> 
+    </span>
+
     <span><a routerLink="/home">Admissions</a></span>
     <span><a routerLink="/contactus">Contact Us</a></span>
     <span><a routerLink="/aboutus">About Us</a></span>
+    <mat-menu #menu="matMenu" (mouseleave)="menuTrigger.closeMenu()">
+      <span (mouseleave)="menuTrigger.closeMenu()">
+      <button mat-menu-item routerLink="/cse">Computer Science And Engineering</button>
+      <button mat-menu-item routerLink="/civil">Civil Engineering</button>
+      <button mat-menu-item routerLink="/ece">Electronic And Communication Engineering</button>
+      <button mat-menu-item routerLink="/eee">Electrical And Electronic Engineering</button>
+      <button mat-menu-item routerLink="/mech">Mechanical Engineering</button>
+      </span>
+    </mat-menu>
   </mat-toolbar-row>
+  

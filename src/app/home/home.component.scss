@@ -78,14 +78,32 @@
  }
  .news_events{
   width: 100%;
+  height: 100%;
+ 
  }
  .events_data{
-  height: 300px;
 
-   overflow: auto;
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
  }
+ .dataevents:hover{
+  animation-play-state: paused;
+ }
+.dataevents{
+  height: 300px;
+  overflow: hidden;
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
  .training_placement{
   width: 100%;
+  height: 100%;
  }
  .departments h2{
    height: 40px;
@@ -111,7 +129,7 @@
    margin: 20px;
    padding: 20px;
    justify-items: center;
-   box-shadow: 2px 2px 2px 2px rgb(102, 104, 105);
+
    
  }
  .department_list mat-card:hover{
@@ -137,12 +155,18 @@
 .quicklink{
   display: flex;
   align-items: center;
+  margin: 10px;
 }
 .quicklink a{
   text-decoration: none;
   color: rgb(37 64 213 / 80%);
   text-transform: lowercase; 
   text-align: center;
+}
+.link{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .quicklink::before {
   text-transform: capitalize;
@@ -178,35 +202,7 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
-footer{
-  background-color: #1B1A17;
-  color: #EADEDE;
-}
-.contact_content{
-display: flex;
-  padding: 20px;
- 
-}
-.address{
-width: 100%;
-display: flex;
-// justify-content: space-evenly;
-flex-wrap:wrap ;
-}
-.maplink{
- 
-  }
 
-  .maplink img{
-    width: 350px;
-  }
-.third{
- margin-left: 4vw;
-}
-.socialmedia a{
-padding: 5px;
-color: white;
-}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -215,4 +211,28 @@ color: white;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }

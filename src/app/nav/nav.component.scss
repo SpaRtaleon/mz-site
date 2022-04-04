@@ -14,3 +14,17 @@
 .nav a:hover{
   color: darkorange;
 }
+a button{
+  all:inherit ;
+}
+.mat-menu-content{
+  background: #3dcfe6;
+}
+.mat-menu-item:active{
+  color:darkorange ;
+}
+.mat-menu-item:hover{ 
+  color:black;
+  font-size: 110%;
+  text-shadow: 10px 10px 5px rgb(83, 83, 83);
+}

@@ -1,0 +1,40 @@
+footer{
+    background-color: #1B1A17;
+    color: #EADEDE;
+  }
+  .contact_content{
+  display: flex;
+    padding: 30px;
+   
+  }
+  .address{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   justify-content: space-evenly;
+  flex-wrap:wrap ;
+  }
+  .maplink{
+   
+    }
+  
+    .maplink img{
+      width: 350px;
+    }
+  .third{
+   margin-left: 4vw;
+  }
+  .links a{
+    text-decoration: none;
+  }
+  
+  .socialmedia a{
+  padding: 5px;
+  color: white;
+  }
+  .socialmedia a:hover{
+  color:rgba(250, 112, 53, 0.938);
+  }
+  .footerelement{
+    display: flex;
+  }
