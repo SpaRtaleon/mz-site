@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
 import {DepartmentsModule} from './departments/departments.module';
+import { AdmissionComponent } from './admission/admission.component';
+import { ApplyOnlineComponent } from './apply-online/apply-online.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import {DepartmentsModule} from './departments/departments.module';
     NavComponent,
     AboutUsComponent,
     ContactusComponent,
-    FooterComponent
+    FooterComponent,
+    AdmissionComponent,
+    ApplyOnlineComponent
   ],
   imports: [
     BrowserModule,

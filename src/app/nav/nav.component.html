@@ -8,11 +8,11 @@
     <span><a routerLink="/home">Home</a></span>
     <span>
      <a href="">
-      <button #menuTrigger="matMenuTrigger" mat-button [matMenuTriggerFor]="menu"(mouseenter)="menuTrigger.openMenu()">Departments</button>
+      <button #menuTrigger="matMenuTrigger" mat-button [matMenuTriggerFor]="menu"(mouseenter)="menuTrigger.openMenu()"(clickOutside)="menuTrigger.closeMenu()" >Departments</button>
      </a> 
     </span>
 
-    <span><a routerLink="/home">Admissions</a></span>
+    <span><a ><button #admission="matMenuTrigger" mat-button [matMenuTriggerFor]="admissions" (mouseenter)="admission.openMenu()"  >Admission</button></a></span>
     <span><a routerLink="/contactus">Contact Us</a></span>
     <span><a routerLink="/aboutus">About Us</a></span>
     <mat-menu #menu="matMenu" (mouseleave)="menuTrigger.closeMenu()">
@@ -23,6 +23,13 @@
       <button mat-menu-item routerLink="/eee">Electrical And Electronic Engineering</button>
       <button mat-menu-item routerLink="/mech">Mechanical Engineering</button>
       </span>
+    </mat-menu>
+    <mat-menu #admissions (mouseleave)="admission.closeMenu()">
+      <span (mouseleave)="admission.closeMenu()">
+        <button mat-menu-item routerLink="/admissions" >Admission</button>
+        <button mat-menu-item routerLink="/apply-online" >Apply Online</button>
+      </span>
+
     </mat-menu>
   </mat-toolbar-row>
   

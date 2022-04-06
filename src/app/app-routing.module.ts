@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AdmissionComponent } from './admission/admission.component';
+import { ApplyOnlineComponent } from './apply-online/apply-online.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { CivilComponent } from './departments/civil/civil.component';
 import { CseComponent } from './departments/cse/cse.component';
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path: 'mech',
     component: MechComponent
+  },
+  {
+    path: 'admissions',
+    component: AdmissionComponent
+  },
+  {
+    path: 'apply-online',
+    component: ApplyOnlineComponent
   },
 ];
 
