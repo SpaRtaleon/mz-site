@@ -8,7 +8,7 @@
 }
  .slide{
    position: relative;
-   height: 320px !important;
+   height: 100%;
  }
 .mall-slide .slid-content {
   width: 100%;
@@ -73,7 +73,7 @@
  .events h2{
    padding: 5px;
    text-align: center;
-   background-color: rgb(37 64 213 / 80%);
+   background-color: #E45826;
    color: #1a1008
  }
  .news_events{
@@ -123,12 +123,12 @@
  }
  .department_list mat-card {
   // background-image: url('../../assets/img/civil.png');
-   width: 300px;
+   width: 260px;
    height: 60%;
    text-align: center;
    margin: 20px;
    padding: 20px;
-   justify-items: center;
+   justify-items: space-around;
 
    
  }
@@ -138,6 +138,8 @@
  }
  .department_list mat-card h3{
    font-weight: 800;
+   text-shadow: 10px 10px 5px rgb(15, 15, 15);
+   text-shadow: black;
  }
 .department_list mat-card-title{
    font-size: 20px;
@@ -161,9 +163,10 @@
   margin: 10px;
 }
 .quicklink a{
+  font-family: Robato_slab;
   text-decoration: none;
   color: rgb(37 64 213 / 80%);
-  text-transform: lowercase; 
+  text-transform: capitalize; 
   text-align: center;
 }
 .link{
