@@ -1,3 +1,6 @@
+*{
+  font-family: Robato_slab, "Robato_slab", sans-serif;
+}
 .mall-slide {
   position: absolute;
 
@@ -63,6 +66,7 @@
   
 }
 .eventss{
+ 
   display: flex;
   
 }
@@ -71,6 +75,7 @@
   width: 95%;
 }
  .events h2{
+  font-family: Robato_slab bold;
    padding: 5px;
    text-align: center;
    background-color: #E45826;

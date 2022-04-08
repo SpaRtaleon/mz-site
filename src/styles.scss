@@ -39,3 +39,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Robato_slab, "Robato_slab", sans-serif; }
 
 
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: '"Roboto Slab", serif;');
+@include mat.core($custom-typography);
