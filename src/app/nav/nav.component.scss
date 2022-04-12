@@ -23,11 +23,10 @@ mat-menu button{
 .mat-menu-content{
   background: #3dcfe6;
 }
-.mat-menu-item:active{
-  color:darkorange ;
-}
+  
 .mat-menu-item:hover{ 
   color:black;
   font-size: 110%;
   text-shadow: 10px 10px 5px rgb(83, 83, 83);
 }
+.mat-menu-panel {max-width: 100%!important; min-width: 64px!important;}

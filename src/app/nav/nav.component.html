@@ -13,6 +13,11 @@
     </span>
 
     <span><a ><button #admission="matMenuTrigger" mat-button [matMenuTriggerFor]="admissions" (mouseenter)="admission.openMenu()"  >Admission</button></a></span>
+    <span>
+      <a href="">
+       <button #clubmenu="matMenuTrigger" mat-button [matMenuTriggerFor]="club_cells"(mouseenter)="clubmenu.openMenu()"(clickOutside)="clubmenu.closeMenu()" >Club & Cells</button>
+      </a> 
+     </span>
     <span><a routerLink="/contactus">Contact Us</a></span>
     <span><a routerLink="/aboutus">About Us</a></span>
     <mat-menu #menu="matMenu" (mouseleave)="menuTrigger.closeMenu()">
@@ -30,6 +35,52 @@
         <button mat-menu-item routerLink="/apply-online" >Apply Online</button>
       </span>
 
+    </mat-menu>
+
+    <mat-menu #club_cells="matMenu" (mouseleave)="clubmenu.closeMenu()" style="width: 100%;">
+      <span (mouseleave)="clubmenu.closeMenu()">
+        <div style="display: flex;">
+          <div>
+            <ul>
+              <h3 style="color: aliceblue;">
+                CLUBS
+              </h3>
+            <a routerLink="/">Rotaract Club</a>
+            <a routerLink="/">National Service Scheme(NSS)  </a>
+             <a routerLink="/">Computer Soceity of India(CSI)</a>
+            <a routerLink="/">Alumni Association</a>
+            <a routerLink="/">Youth Red Cross(YRC)</a>
+            <a routerLink="/">Institution of Electronics and Telecommunication Engineers(IETE)</a>
+            <a routerLink="/">Institute of Electrical and Electronics Engineers(IEEE)</a>
+            <a routerLink="/">IE(I) - Institute of Engineers (India)</a>
+            </ul>
+          </div>
+         <div>
+          <ul>
+            <h4 >
+              CELLS
+            </h4>
+            <a routerLink="/">Research and Development Cell</a>
+            <a routerLink="/">Indian Society for Technical Education(ISTE)</a>
+            <a routerLink="/">Green Campus Initiative Cell</a>
+            <a routerLink="/">Career Guidance Cell</a>
+            <a routerLink="/">IIT Remote Centre</a>
+            <a routerLink="/">Entrepreneurship Development Cell</a>
+            <a routerLink="/">Energy Audit Cell</a>
+            <a routerLink="/">Student Counselling Cell</a>
+            <a routerLink="/">Anti-Ragging Cell</a>
+          </ul>
+         </div>
+          
+        </div>
+    <div>
+     
+    </div>
+     
+        
+    
+     
+      </span>
     </mat-menu>
   </mat-toolbar-row>
   
