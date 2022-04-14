@@ -22,6 +22,9 @@ mat-menu button{
 }
 .mat-menu-content{
   background: #3dcfe6;
+  overflow: hidden;
+  padding: 2%;
+
 }
   
 .mat-menu-item:hover{ 
@@ -30,3 +33,23 @@ mat-menu button{
   text-shadow: 10px 10px 5px rgb(83, 83, 83);
 }
 .mat-menu-panel {max-width: 100%!important; min-width: 64px!important;}
+.clubs ,.cells {
+  overflow: hidden;
+  text-decoration: none;
+  white-space: nowrap;
+  
+}
+.clubs a,.cells a{ 
+  text-decoration: none;
+  margin-top: 5%;
+}
+.clubs a:hover,.cells a:hover{
+  color: white;
+  text-shadow: 5px 5px 2px rgb(83, 83, 83) ;
+}
+
+.cell,.club{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
